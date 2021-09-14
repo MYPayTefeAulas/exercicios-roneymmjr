@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PessoatabActivity">
+
+    <Button
+        android:id="@+id/btSalvar"
+        android:layout_width="206dp"
+        android:layout_height="67dp"
+        android:text="SALVAR"
+        app:layout_constraintBottom_toTopOf="@+id/btPrXimo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entradaIdade" />
+
+    <Button
+        android:id="@+id/btZerar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ZERAR LISTA"
+        app:layout_constraintBottom_toTopOf="@+id/entradaNome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btPrXimo"
+        android:layout_width="161dp"
+        android:layout_height="79dp"
+        android:text="PROXIMO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btSalvar" />
+
+    <EditText
+        android:id="@+id/entradaNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nome"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/entradaIdade"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btZerar" />
+
+    <EditText
+        android:id="@+id/entradaIdade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Idade"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btSalvar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entradaNome" />
+
+    <TextView
+        android:id="@+id/txtNome"
+        android:layout_width="190dp"
+        android:layout_height="37dp"
+        app:layout_constraintBottom_toTopOf="@+id/btSalvar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entradaIdade" />
+</androidx.constraintlayout.widget.ConstraintLayout>

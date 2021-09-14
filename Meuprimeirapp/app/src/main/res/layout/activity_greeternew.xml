@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GreeternewActivity">
+
+    <TextView
+        android:id="@+id/txtGreeter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="88dp"
+        android:text="Greeter"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btTrocar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:text=">"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtGreeter"
+        app:layout_constraintStart_toEndOf="@+id/txtNumGreeter"
+        app:layout_constraintTop_toTopOf="@+id/txtGreeter" />
+
+    <EditText
+        android:id="@+id/entradaNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="76dp"
+        android:ems="10"
+        android:hint="Nome:"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNumGreeter" />
+
+    <EditText
+        android:id="@+id/entradaIdade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Idade:"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entradaNome" />
+
+    <TextView
+        android:id="@+id/txtNumGreeter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:text="1"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtGreeter"
+        app:layout_constraintStart_toEndOf="@+id/txtGreeter"
+        app:layout_constraintTop_toTopOf="@+id/txtGreeter" />
+
+    <TextView
+        android:id="@+id/txtNome"
+        android:layout_width="168dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btSalvar" />
+
+    <Button
+        android:id="@+id/btSalvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="184dp"
+        android:text="Salvar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entradaIdade" />
+
+    <Button
+        android:id="@+id/btPrXimo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="44dp"
+        android:text="Imprimir Próximo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNome" />
+</androidx.constraintlayout.widget.ConstraintLayout>
