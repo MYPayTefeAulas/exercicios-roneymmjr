@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="bt1">
+        <item name="android:layout_width">58dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginStart">12dp</item>
+        <item name="android:background">#03A9F4</item>
+        <item name="android:textColorHighlight">#090909</item>
+    </style>
+</resources>

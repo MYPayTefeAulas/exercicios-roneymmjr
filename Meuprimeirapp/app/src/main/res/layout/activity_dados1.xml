@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D2E4E6"
+    tools:context=".DadosActivity">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Dados"
+        android:textColor="#0B0A0A"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtSaidadoDado1"
+        android:layout_width="46dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="84dp"
+        android:text="-------"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtNumeroDado1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:text="6"
+        android:textColor="#100F0F"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtSaidadoDado1"
+        app:layout_constraintStart_toEndOf="@+id/txtSaidadoDado1"
+        app:layout_constraintTop_toTopOf="@+id/txtSaidadoDado1"
+        app:layout_constraintVertical_bias="0.6" />
+
+    <TextView
+        android:id="@+id/txtSaidadoDado2"
+        android:layout_width="45dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="68dp"
+        android:text="======"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSaidadoDado1" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:text="lados"
+        app:layout_constraintBottom_toBottomOf="@+id/txtNumeroDado1"
+        app:layout_constraintStart_toEndOf="@+id/txtNumeroDado1"
+        app:layout_constraintTop_toTopOf="@+id/txtNumeroDado1" />
+
+    <TextView
+        android:id="@+id/txtNumeroDado2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:text="10"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/txtSaidadoDado2"
+        app:layout_constraintStart_toEndOf="@+id/txtSaidadoDado2"
+        app:layout_constraintTop_toTopOf="@+id/txtSaidadoDado2" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="lados"
+        app:layout_constraintBottom_toBottomOf="@+id/txtNumeroDado2"
+        app:layout_constraintStart_toEndOf="@+id/txtNumeroDado2"
+        app:layout_constraintTop_toTopOf="@+id/txtNumeroDado2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtSaidadoDado3"
+        android:layout_width="43dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="68dp"
+        android:text="+++++"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSaidadoDado2" />
+
+    <TextView
+        android:id="@+id/txtNumeroDado3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:text="4"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/txtSaidadoDado3"
+        app:layout_constraintStart_toEndOf="@+id/txtSaidadoDado3"
+        app:layout_constraintTop_toTopOf="@+id/txtSaidadoDado3" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="lados"
+        app:layout_constraintBottom_toBottomOf="@+id/txtNumeroDado3"
+        app:layout_constraintStart_toEndOf="@+id/txtNumeroDado3"
+        app:layout_constraintTop_toTopOf="@+id/txtNumeroDado3" />
+
+    <EditText
+        android:id="@+id/txtEntradadado1"
+        android:layout_width="57dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/textView11"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toTopOf="@+id/textView11"
+        app:layout_constraintVertical_bias="0.818" />
+
+    <EditText
+        android:id="@+id/txtEntradadado2"
+        android:layout_width="57dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/textView13"
+        app:layout_constraintStart_toEndOf="@+id/textView13"
+        app:layout_constraintTop_toTopOf="@+id/textView13"
+        app:layout_constraintVertical_bias="0.523" />
+
+    <EditText
+        android:id="@+id/txtEntradadado3"
+        android:layout_width="57dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/textView16"
+        app:layout_constraintStart_toEndOf="@+id/textView16"
+        app:layout_constraintTop_toTopOf="@+id/textView16" />
+
+    <Button
+        android:id="@+id/botaoSortear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="308dp"
+        android:text="Sortear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="58dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:background="#03A9F4"
+        android:text="ok"
+        android:textColorHighlight="#090909"
+        app:layout_constraintBottom_toBottomOf="@+id/txtEntradadado1"
+        app:layout_constraintStart_toEndOf="@+id/txtEntradadado1"
+        app:layout_constraintTop_toTopOf="@+id/txtEntradadado1"
+        app:rippleColor="#000000" />
+
+    <Button
+        android:id="@+id/botao2"
+        android:layout_width="58dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:background="#03A9F4"
+        android:text="ok"
+        app:layout_constraintBottom_toBottomOf="@+id/txtEntradadado2"
+        app:layout_constraintStart_toEndOf="@+id/txtEntradadado2"
+        app:layout_constraintTop_toTopOf="@+id/txtEntradadado2"
+        app:rippleColor="#00BCD4" />
+
+    <Button
+        android:id="@+id/botao3"
+        android:layout_width="58dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:background="#03A9F4"
+        android:text="ok"
+        app:layout_constraintBottom_toBottomOf="@+id/txtEntradadado3"
+        app:layout_constraintStart_toEndOf="@+id/txtEntradadado3"
+        app:layout_constraintTop_toTopOf="@+id/txtEntradadado3"
+        app:layout_constraintVertical_bias="0.0"
+        app:rippleColor="#00BCD4" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:background="#D2E4E6"
+        android:text="Número sortedo"
+        android:textColor="#F44336"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

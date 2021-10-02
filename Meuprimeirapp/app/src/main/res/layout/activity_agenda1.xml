@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Agenda1Activity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AGENDA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.035" />
+
+    <TextView
+        android:id="@+id/txtSaidaAgd"
+        android:layout_width="204dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/txtEntradaAg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Nome"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSaidaAgd" />
+
+    <EditText
+        android:id="@+id/txtEntradaTagenda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Tefefone"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/txtEntradaAg"
+        app:layout_constraintTop_toBottomOf="@+id/txtEntradaAg" />
+
+    <Button
+        android:id="@+id/btSalvarContato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="36dp"
+        android:text="Salvar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEntradaTagenda" />
+
+    <Button
+        android:id="@+id/bt1Deletar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:text="DELETAR"
+        app:layout_constraintBottom_toBottomOf="@+id/btSalvarContato"
+        app:layout_constraintStart_toEndOf="@+id/btSalvarContato"
+        app:layout_constraintTop_toTopOf="@+id/btSalvarContato"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btProxContato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Proximo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.389"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt1Deletar" />
+
+    <Button
+        android:id="@+id/bt1Pesquisar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:text="PESQUISAR"
+        app:layout_constraintBottom_toBottomOf="@+id/txt1EntradaPesquisa"
+        app:layout_constraintStart_toEndOf="@+id/txt1EntradaPesquisa"
+        app:layout_constraintTop_toTopOf="@+id/txt1EntradaPesquisa"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/txt1EntradaPesquisa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:ems="10"
+        android:hint="Contato"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/btSalvarContato"
+        tools:layout_editor_absoluteX="13dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

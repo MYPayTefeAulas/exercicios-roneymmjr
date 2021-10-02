@@ -9,6 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Meuprimeirapp">
+
+        <activity
+            android:name=".Dados1Activity"
+            android:exported="true" >
+
+        </activity>
+
+        <activity
+            android:name=".Agenda1Activity"
+            android:exported="true">
+
+
+        </activity>
         <activity
             android:name=".GreeternewActivity"
             android:exported="true" >
@@ -18,16 +31,14 @@
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
         </activity>
-
-
         <activity
             android:name=".Greeter1Activity"
-            android:exported="true">
+            android:exported="true" >
 
         </activity>
         <activity
             android:name=".PessoatabActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".PessoasActivity"
             android:exported="true" />

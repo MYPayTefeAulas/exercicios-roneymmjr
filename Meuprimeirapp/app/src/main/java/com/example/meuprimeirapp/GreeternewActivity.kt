@@ -10,13 +10,19 @@ class GreeternewActivity : AppCompatActivity() {
     private var idade = 0
     val listasPessoa = mutableListOf<Pessoa>()
     private var indiceAtual = 0
+    //private var greeterAtual = 1
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
+        val greeter1 = GreeterTipo1("Olá","sua idade é ")
+        val greeter2 = GreeterTipo1("Bem vindo","de idade")
+        val greeter3 = GreeterTipo1("to welcome: ", "idade")
         super.onCreate(savedInstanceState)
         binding = ActivityGreeternewBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
+var greeterAtual = greeter1
         binding.btSalvar.setOnClickListener{
             if(binding.entradaNome.text.isNullOrBlank()||binding.entradaIdade.text.isNullOrBlank())
             {
@@ -33,24 +39,38 @@ class GreeternewActivity : AppCompatActivity() {
             }
 
         }
+
+
         binding.btPrXimo.setOnClickListener{
-            binding.txtNome.text = imprimePessoa()
-        }
 
-    }
-    fun imprimePessoa(): String{
-        if(listasPessoa.size==0){
-            return "Nenhum dado foi salvo"
-        }
-        if(indiceAtual >=listasPessoa.size) {
-            indiceAtual = 0
-            return "Fim da lista"
+         val pessoaAtual = listasPessoa[indiceAtual]
+            binding.txtNome.text = greeterAtual.greet2(pessoaAtual)
+            if(indiceAtual == listasPessoa.size -1){
+
+                indiceAtual = 0
+            }else{
+                indiceAtual++
+            }
 
         }
 
-        val pessoaAtual = listasPessoa[indiceAtual]
-        indiceAtual++
-        return "Nome: ${pessoaAtual.nome}, Idade: ${pessoaAtual.idade}"
+        binding.btTrocar.setOnClickListener{
+            if(greeterAtual ==greeter1){
+                binding.txtNumGreeter.text = "2"
+                greeterAtual = greeter2
+
+            }else if(greeterAtual==greeter2){
+
+                binding.txtNumGreeter.text = "3"
+                greeterAtual = greeter3
+            }else
+            {
+              greeterAtual = greeter1
+                binding.txtNumGreeter.text = "1"
+
+            }
+        }
+
 
     }
 
