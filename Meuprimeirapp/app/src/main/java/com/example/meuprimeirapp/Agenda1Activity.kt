@@ -6,7 +6,7 @@ import android.os.Bundle
 import com.example.meuprimeirapp.databinding.ActivityAgenda1Binding
 
 class Agenda1Activity : AppCompatActivity() {
-    //++++++++++++++++++++++++++++++++++++++++++++++
+//++++++++++++++++++++++++++++++++++++++++++++++
     private lateinit var binding:ActivityAgenda1Binding
     val agenda = Agenda()
     var contatoAtual = Pessoa1("","")
