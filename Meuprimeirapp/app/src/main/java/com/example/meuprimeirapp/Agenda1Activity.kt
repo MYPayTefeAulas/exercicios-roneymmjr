@@ -47,6 +47,36 @@ class Agenda1Activity : AppCompatActivity() {
                 }
             }
         }
+        binding.btEditar.setOnClickListener {
+            val nome = binding.txtEntradaAg.text.toString()
+            val contato = binding.txtEntradaTagenda.text.toString()
+            if(nome!=""&&contato!=""){
+                if(agenda.existeContato()){
+                    binding.txtSaidaAgd.text = "Agenda vazia"
+
+                }else{
+                    if(agenda.ExisteContato(contato)) {
+                        contatoAtual.nome = nome
+                        contatoAtual.contato = contato
+                        binding.txtSaidaAgd.text = "Edição realizada"
+                        binding.txtEntradaAg.text.clear()
+                        binding.txtEntradaTagenda.text.clear()
+                    }else{
+                        binding.txtSaidaAgd.text = "Erro: ontato já existe"
+                    }
+                }
+
+
+
+            }else{
+                binding.txtSaidaAgd.text = "Existem campos vazios"
+            }
+
+
+        }
+
+
+
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         binding.bt1Pesquisar.setOnClickListener{
             var contato = binding.txt1EntradaPesquisa.text.toString()
@@ -57,7 +87,7 @@ class Agenda1Activity : AppCompatActivity() {
 
     //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //Criar as funçoes
-    private fun salvarContato(nome: String,contato:String ){
+   private fun salvarContato(nome: String,contato:String ){
         if(nome.isNullOrBlank()){
             binding.txtSaidaAgd.setTextColor(resources.getColor(R.color.purple_700))
             binding.txtSaidaAgd.text = "Nome vazio"

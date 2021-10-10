@@ -2,11 +2,12 @@ package com.example.meuprimeirapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.meuprimeirapp.databinding.ActivityListaspessoasBinding
 import com.example.meuprimeirapp.databinding.ActivityPessoasBinding
-import com.example.meuprimeirapp.databinding.ActivityPessoatabBinding
+//import com.example.meuprimeirapp.databinding.ActivityPessoatabBinding//
 
-class PessoatabActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityPessoatabBinding
+class ListasPessoasActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityListaspessoasBinding
     private var nome = ""
     private var idade = 0
     val listasPessoa = mutableListOf<Pessoa>()
@@ -14,7 +15,7 @@ class PessoatabActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
-        binding = ActivityPessoatabBinding.inflate(layoutInflater)
+        binding = ActivityListaspessoasBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         binding.btSalvar.setOnClickListener{

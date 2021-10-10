@@ -104,4 +104,14 @@
         app:layout_constraintTop_toBottomOf="@+id/btSalvarContato"
         tools:layout_editor_absoluteX="13dp" />
 
+    <Button
+        android:id="@+id/btEditar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="EDITAR"
+        app:layout_constraintBottom_toBottomOf="@+id/bt1Deletar"
+        app:layout_constraintStart_toEndOf="@+id/bt1Deletar"
+        app:layout_constraintTop_toTopOf="@+id/bt1Deletar" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

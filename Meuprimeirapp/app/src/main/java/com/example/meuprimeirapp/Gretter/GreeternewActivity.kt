@@ -1,7 +1,8 @@
-package com.example.meuprimeirapp
+package com.example.meuprimeirapp.Gretter
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.meuprimeirapp.Pessoa
 import com.example.meuprimeirapp.databinding.ActivityGreeternewBinding
 
 class GreeternewActivity : AppCompatActivity() {

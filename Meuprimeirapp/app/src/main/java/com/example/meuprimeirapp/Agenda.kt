@@ -55,4 +55,15 @@ class Agenda {
         return contatoPesquisa
     }
 
+    fun ExisteContato(contato: String): Boolean{
+
+        for (x in 0..listaContatos.size - 1){
+            if(contato == listaContatos[x].contato){
+                return false
+                break
+            }
+        }
+        return true
+    }
+
 }
