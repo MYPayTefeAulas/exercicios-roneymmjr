@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">Meuprimeirapp</string>
+    <string name="editar_contato">Editar_Contato</string>
+    <string name="contato_salvo">Contato_Salvo</string>
+    <string name="deletar_contato">Deletar_Contato</string>
+    <string name="realmente_deletar">Realmente_Deletar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="ordem_alfabetica">Ordem Alfabética</string>
+    <string name="deletar">Deletar</string>
+    <string name="contato_removido">Contato_Removido</string>
+    <string name="nome">Nome</string>
+    <string name="salvar">Salvar</string>
+    <string name="tefone">Telefone</string>
+    <string name="favorito">Favorito</string>
+    <string name="editar">Editar</string>
+    <string name="ordenacao">Ordenacao</string>
+    <string name="alfabetica_az">Alfabetica_Az</string>
+    <string name="alfabetica_za">Alfabetica_Za</string>
+    <string name="ordem_insercao">Ordem_Insercao</string>
 </resources>

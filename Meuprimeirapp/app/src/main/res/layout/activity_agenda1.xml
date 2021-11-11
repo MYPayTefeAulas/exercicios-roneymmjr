@@ -4,28 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Agenda1Activity">
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="AGENDA"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.035" />
+    tools:context=".AgendaCompleta.Agenda1Activity">
 
     <TextView
         android:id="@+id/txtSaidaAgd"
         android:layout_width="204dp"
         android:layout_height="36dp"
-        android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.922"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        tools:layout_editor_absoluteY="68dp" />
 
     <EditText
         android:id="@+id/txtEntradaAg"
@@ -86,7 +74,7 @@
         android:id="@+id/bt1Pesquisar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
+        android:layout_marginStart="36dp"
         android:text="PESQUISAR"
         app:layout_constraintBottom_toBottomOf="@+id/txt1EntradaPesquisa"
         app:layout_constraintStart_toEndOf="@+id/txt1EntradaPesquisa"
@@ -95,11 +83,11 @@
 
     <EditText
         android:id="@+id/txt1EntradaPesquisa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="237dp"
+        android:layout_height="39dp"
         android:layout_marginTop="160dp"
         android:ems="10"
-        android:hint="Contato"
+        android:hint="Contato ou Number Celular"
         android:inputType="textPersonName"
         app:layout_constraintTop_toBottomOf="@+id/btSalvarContato"
         tools:layout_editor_absoluteX="13dp" />

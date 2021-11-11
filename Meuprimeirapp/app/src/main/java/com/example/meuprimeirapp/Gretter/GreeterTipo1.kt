@@ -1,6 +1,6 @@
 package com.example.meuprimeirapp.Gretter
 
-import com.example.meuprimeirapp.Pessoa
+import com.example.meuprimeirapp.AgendaCompleta.Pessoa
 
 class GreeterTipo1 {
     var cumprimento: String = ""

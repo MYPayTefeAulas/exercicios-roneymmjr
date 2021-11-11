@@ -10,25 +10,71 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Meuprimeirapp">
         <activity
-            android:name=".TelaInicialActivity"
+            android:name=".testeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AgendaV6.EditarContatoV6Activity"
+            android:exported="true" />
+        <activity
+            android:name=".AgendaV6.TelaInicialV6Activity"
+            android:exported="true" />
+        <activity
+            android:name=".AgendaV5.EditarContatoV5Activity"
+            android:exported="true" />
+        <activity
+            android:name=".AgendaV5.TelaInicialV5Activity"
+            android:exported="true" />
+        <activity
+            android:name=".AgendaV4.EditarContatoV4Activity"
+            android:exported="true" />
+        <activity
+            android:name=".AgendaV4.TelaInicialV4Activity"
+            android:exported="true" />
+        <activity
+            android:name=".AgendaV3.EditarContatoV3Activity"
+            android:exported="true" />
+        <activity
+            android:name=".AgendaV3.TelaInicialV3Activity"
+            android:exported="true" />
+        <activity
+            android:name=".VersoesAgenda.TelaInicialVersoesAgendaActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-
         <activity
-            android:name=".Dados1Activity"
+            android:name=".Agendav2.TelaInicialV2Activity"
             android:exported="true" />
         <activity
-            android:name=".Agenda1Activity"
-            android:exported="true">
-
-
-        </activity>
+            android:name=".AgendaV1.EditarContatoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AgendaV1.TelaInicialAgendaActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RPG.HistoricoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RPG.DadosGuerreiroActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RPG.BatalhaActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RPG.RPGActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AgendaCompleta.TelaInicialActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Dados.Dados1Activity"
+            android:exported="true" />
+        <activity
+            android:name=".AgendaCompleta.Agenda1Activity"
+            android:exported="true" />
         <activity
             android:name=".Gretter.GreeternewActivity"
             android:exported="true" />
@@ -36,21 +82,13 @@
             android:name=".Gretter.Greeter1Activity"
             android:exported="true" />
         <activity
-            android:name=".ListasPessoasActivity"
-            android:exported="true" >
-
-        </activity>
-        <activity
-            android:name=".PessoasActivity"
+            android:name=".AgendaCompleta.ListasPessoasActivity"
             android:exported="true" />
         <activity
-            android:name=".pActivity2"
+            android:name=".AgendaCompleta.PessoasActivity"
             android:exported="true" />
         <activity
-            android:name=".listasMainActivity2"
-            android:exported="true" />
-        <activity
-            android:name=".MainActivity"
+            android:name=".Exerciciocalculodobro.MainActivity"
             android:exported="true" />
     </application>
 

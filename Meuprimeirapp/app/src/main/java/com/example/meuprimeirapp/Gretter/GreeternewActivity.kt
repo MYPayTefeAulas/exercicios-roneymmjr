@@ -2,7 +2,7 @@ package com.example.meuprimeirapp.Gretter
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.meuprimeirapp.Pessoa
+import com.example.meuprimeirapp.AgendaCompleta.Pessoa
 import com.example.meuprimeirapp.databinding.ActivityGreeternewBinding
 
 class GreeternewActivity : AppCompatActivity() {
@@ -22,6 +22,7 @@ class GreeternewActivity : AppCompatActivity() {
         val greeter3 = GreeterTipo1("to welcome: ", "idade")
         super.onCreate(savedInstanceState)
         binding = ActivityGreeternewBinding.inflate(layoutInflater)
+        setTitle("GREETER")
         setContentView(binding.root)
 var greeterAtual = greeter1
         binding.btSalvar.setOnClickListener{
